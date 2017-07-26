@@ -201,9 +201,11 @@ th {
   a,
   a:visited {
     text-decoration: underline;
+    color: #fff;
   }
   a[href]:after {
     content: " (" attr(href) ")";
+    
   }
   abbr[title]:after {
     content: " (" attr(title) ")";
@@ -1097,12 +1099,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #aa0000;
+  color: #fff;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #aa0000;
+  color: #fff;
   text-decoration: underline;
 }
 a:focus {
@@ -4724,7 +4726,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #aa0000;
+  color: #fff;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4875,7 +4877,7 @@ a.label:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
-  background-color: #aa0000;
+  background-color: #fff;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
