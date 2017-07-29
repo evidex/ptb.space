@@ -61,9 +61,22 @@
 
     <header id="top" class="header">
                 <div class ="video-container">
-            <video preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted">
-                <source src = "video/background.mp4" type = "video/mp4"> 
+            <video id="background" preload = "true" autoplay onended="run()" muted = "muted">
+                <source src= "video/background1.mp4" type = "video/mp4"> 
             </video>
+                    <script>
+video_count =1;
+videoPlayer = document.getElementById("background");
+
+function run(){
+        video_count++;
+        if (video_count == 4) video_count = 1;
+        var nextVideo = "video/background"+video_count+".mp4";
+        videoPlayer.src = nextVideo;
+        videoPlayer.play();
+   };
+
+    </script>
                 </div>
         <div class="header-container">
             <h1>Pentag Blade</h1>
