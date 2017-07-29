@@ -27,6 +27,7 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
@@ -173,6 +174,7 @@ legend {
   padding: 0;
   border: 0;
 }
+
 textarea {
   overflow: auto;
 }
@@ -214,6 +216,23 @@ th {
   a[href^="javascript:"]:after {
     content: "";
   }
+  #background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+.container h1 {
+    color: white;
+}
   pre,
   blockquote {
     border: 1px solid #999;
@@ -3119,6 +3138,7 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #aa0000;
   border-color: #2e6da4;
+  text-align: center;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -4962,7 +4982,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #333;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4974,7 +4994,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #d5d5d5;
+  border-top-color: #333;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {

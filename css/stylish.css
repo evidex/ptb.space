@@ -15,12 +15,19 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
-.text-vertical-center {
+.header-container{
+    width: 100%;
+    height: 900px;
+    border-left: none;
+    border-right: none;
+    position: relative;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color: #fff;    
+    color: #fff;  
+}
+.text-vertical-center {
+  
 }
 
 .text-vertical-center h1 {
@@ -157,8 +164,7 @@ hr.small {
     width: 100%;
     height: 100%;
     color: #000;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
+     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
@@ -252,3 +258,21 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+/* Video footage */
+
+
+}
+video {
+position: absolute;
+z-index: -1;
+opacity: 0.78;
+
+}
+    .video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    }
