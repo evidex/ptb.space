@@ -29,7 +29,7 @@ body {
 .overlay { 
   color:#fff;
   position:absolute;
-  z-index:12;
+  z-index:15;
   top:50%;
   left:0;
   width:100%;
