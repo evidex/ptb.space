@@ -26,14 +26,46 @@ body {
     vertical-align: middle;
     color: #fff;  
 }
-
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
 }
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
 
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+  position: relative;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: -1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  
+  background-color:#555;
+  position: relative;
+}
+.carousel img {
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
 /* Custom Button Styles */
 
 .btn-dark {

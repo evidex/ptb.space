@@ -72,3 +72,8 @@ $('.hi span:last-of-type').on('click', function(){
   $('.hi em:nth-of-type(2)').html('~');
   tv.pauseVideo();
 });
+
+$('.carousel').carousel({
+  interval: 6000,
+  pause: "false"
+});
